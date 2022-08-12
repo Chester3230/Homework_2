@@ -8,73 +8,54 @@ public class Main {
 
         Object [] objects = {'g', 344, 545.676};
 
+
         //Задача 2
-        int i = 0;
-        while (i <= 2){
-            System.out.print(weight[i]);
-            if (i != 2) {
-                System.out.print(",");
-            }
-            ++i;
+
+
+        for (int i = 0; i < weight.length - 1; i++) {
+            System.out.print(weight[i] + ", ");
         }
-        System.out.println(" ");
-        i = 0;
-        while (i <= 2){
-            System.out.print(drob[i]);
-            if (i != 2) {
-                System.out.print(",");
-            }
-            ++i;
+        System.out.println(weight[weight.length - 1]);
+
+
+        for (int i = 0; i < drob.length - 1; i++) {
+            System.out.print(drob[i] + ", ");
         }
-        System.out.println(" ");
-        i = 0;
-        while (i <= 2){
-            System.out.print(objects[i]);
-            if (i != 2) {
-                System.out.print(",");
-            }
-            ++i;
+        System.out.println(drob[drob.length - 1]);
+
+
+        for (int i = 0; i < objects.length - 1; i++) {
+            System.out.print(objects[i] + ", ");
         }
-        System.out.println(" ");
+        System.out.println(objects[objects.length - 1]);
+
 
         //Задание 3
-        i = 2;
-        while (true){
-            System.out.print(weight[i]);
-            if (i != 0) {
-                System.out.print(",");
-            } else {
-                break;
-            }
-            --i;
+
+
+        for (int i = objects.length - 1; i != 0; --i) {
+            System.out.print(objects[i] + ", ");
         }
-        System.out.println(" ");
-        i = 2;
-        while (true){
-            System.out.print(drob[i]);
-            if (i != 0) {
-                System.out.print(",");
-            } else {
-                break;
-            }
-            --i;
+        System.out.println(objects[0]);
+
+
+        for (int i = drob.length - 1; i != 0; --i) {
+            System.out.print(drob[i] + ", ");
         }
-        System.out.println(" ");
-        i = 2;
-        while (true){
-            System.out.print(objects[i]);
-            if (i != 0) {
-                System.out.print(",");
-            } else {
-                break;
-            }
-            --i;
+        System.out.println(drob[0]);
+
+
+
+        for (int i = weight.length - 1; i != 0; --i) {
+            System.out.print(weight[i] + ", ");
         }
-        System.out.println(" ");
+        System.out.println(weight[0]);
+
 
         //Задача 4
 
-        for (int ii = 0; ii <= 2; ++ii) {
+
+        for (int ii = 0; ii < weight.length; ++ii) {
             if (weight[ii]%2 == 0) {
                 System.out.print(weight[ii]);
             } else {
