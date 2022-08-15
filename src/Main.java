@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -33,20 +35,20 @@ public class Main {
         //Задание 3
 
 
-        for (int i = objects.length - 1; i != 0; --i) {
+        for (int i = objects.length - 1; i != 0; i--) {
             System.out.print(objects[i] + ", ");
         }
         System.out.println(objects[0]);
 
 
-        for (int i = drob.length - 1; i != 0; --i) {
+        for (int i = drob.length - 1; i != 0; i--) {
             System.out.print(drob[i] + ", ");
         }
         System.out.println(drob[0]);
 
 
 
-        for (int i = weight.length - 1; i != 0; --i) {
+        for (int i = weight.length - 1; i != 0; i--) {
             System.out.print(weight[i] + ", ");
         }
         System.out.println(weight[0]);
@@ -55,15 +57,11 @@ public class Main {
         //Задача 4
 
 
-        for (int ii = 0; ii < weight.length; ++ii) {
-            if (weight[ii]%2 == 0) {
-                System.out.print(weight[ii]);
-            } else {
-                System.out.print(weight[ii] + 1);
-            }
-            if (ii != 2) {
-                System.out.print(",");
+        for (int j = 0; j < weight.length; j++) {
+            if (weight[j]%2 != 0) {
+                weight[j] = weight[j] + 1;
             }
         }
+        System.out.println(Arrays.toString(weight));
     }
 }
